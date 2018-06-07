@@ -66,7 +66,7 @@ def tweet(twitter):
     twitter.update_status(status = remix(lyric))
 
 while True:
-    rand = random.randint(3600, 86400) # wait between 1 hour and 1 day
+    rand = random.randint(3600, 21600) # wait between 1 hour and 6 hours
     time.sleep(rand)
     twitter = setup()
     tweet(twitter)
